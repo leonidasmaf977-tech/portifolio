@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Meu Portfólio</title>
+</head>
+<body>
+    <div class="particulas"></div>
+
+    <!-- MENU -->
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#portfolio" class="menu-link">Portfólio</a></li>
+            <li><a href="#contato" class="menu-link">Contato</a></li>
+        </ul>
+    </nav>
+
+    
+
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre">
+
+        <h2 class="secao-titulo">Sobre mim</h2>
+        <p class="secao-subtitulo">Transformando ideias em soluções tecnológicas</p>
+
+        <div class="sobre-container">
+
+            <div class="sobre-foto-wrapper">
+                <img src="./img/foto.jpeg" alt="Foto de Leônidas Ferreira" class="sobre-foto">
+            </div>
+
+            <div class="sobre-info">
+
+                <span class="sobre-saudacao">Olá, eu sou</span>
+                <h3 class="sobre-nome">Leônidas Ferreira</h3>
+
+                <p class="sobre-paragrafo">
+                    Sou técnico em Automação Industrial e Instrumentação Industrial.
+                    Atualmente, estou ampliando meus conhecimentos na área de
+                    programação web, estudando tanto Front-end quanto Back-end.
+                    Tenho interesse em desenvolver soluções tecnológicas que unam
+                    programação e automação de processos industriais.
+                </p>
+
+                <div class="sobre-botoes">
+                    <a href="./curriculo.pdf" download class="btn btn-primario">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
+                    <a href="#portfolio" class="btn btn-secundario">
+                        <i class="fa-solid fa-diagram-project"></i> Ver Projetos
+                    </a>
+                </div>
+
+                <div class="sobre-redes">
+                    <a href="https://github.com/leonidasmaf977-tech" target="_blank" class="rede-icone" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/le%C3%B4nidas-moura-alves-ferreira-b96a613a1/" target="_blank" class="rede-icone" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://instagram.com/leonidasferreira.__" target="_blank" class="rede-icone" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+
+                <div class="estatisticas">
+                    <div class="estatistica-card">
+                        <span class="estatistica-numero">2</span>
+                        <span class="estatistica-label">Projetos Concluídos</span>
+                    </div>
+                    <div class="estatistica-card">
+                        <span class="estatistica-numero">1</span>
+                        <span class="estatistica-label">Certificado</span>
+                    </div>
+                    <div class="estatistica-card">
+                        <span class="estatistica-numero">6</span>
+                        <span class="estatistica-label">Meses de Estudo</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VITRINE DE PORTFOLIO -->
+    <section id="portfolio" class="vitrine">
+
+        <h2 class="secao-titulo">Vitrine de Portfólio</h2>
+        <p class="secao-subtitulo">Explore projetos, certificações e tecnologias que refletem minha evolução contínua em automação e desenvolvimento.</p>
+
+        <div class="abas-nav">
+            <button class="aba-botao aba-ativa" onclick="mostrarAba('aba-projetos', this)">
+                <i class="fa-solid fa-code"></i> Projetos
+            </button>
+            <button class="aba-botao" onclick="mostrarAba('aba-certificados', this)">
+                <i class="fa-solid fa-award"></i> Certificados
+            </button>
+            <button class="aba-botao" onclick="mostrarAba('aba-stack', this)">
+                <i class="fa-solid fa-layer-group"></i> Stack Tecnológica
+            </button>
+        </div>
+
+        <!-- ABA PROJETOS -->
+        <div id="aba-projetos" class="aba-conteudo aba-visivel">
+            <div class="caixa-projetos">
+
+                <div class="projetos-card">
+                    <img
+                        src="./img/otis.png"
+                        alt="Projeto Made to Move Communities"
+                        class="projetos-imagem"
+                    >
+                    <div class="caixa-texto-projetos">
+                        <h3 class="info-projetos">
+                            Made to Move Communities – Otis
+                        </h3>
+                        <p class="paragrafo-projetos">
+                            Participei do programa global Made to Move Communities,
+                            promovido pela Otis, colaborando com minha equipe no
+                            desenvolvimento de uma solução inovadora para um desafio de
+                            impacto social. O projeto conquistou o <strong>2º lugar entre
+                            as equipes das Américas</strong>, fortalecendo habilidades em
+                            trabalho em equipe, inovação, comunicação e resolução de
+                            problemas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projetos-card">
+                    <img
+                        src="./img/foto-ideathon.jpeg"
+                        alt="Ideathon"
+                        class="projetos-imagem"
+                    >
+                    <div class="caixa-texto-projetos">
+                        <h3 class="info-projetos">
+                            Ideathon Centro de Paula Souza
+                        </h3>
+                        <p class="paragrafo-projetos">
+                            Participei do Ideathon do Centro Paula Souza, desenvolvendo,
+                            em equipe, uma solução tecnológica para integrar a rede
+                            socioassistencial e otimizar o atendimento de famílias em
+                            situação de vulnerabilidade. O projeto utilizou conceitos de
+                            Design Thinking, inovação social e blockchain para garantir
+                            segurança e transparência no compartilhamento de informações.
+                            Nossa equipe conquistou o <strong>1º lugar</strong>, fortalecendo
+                            competências em liderança, inovação, resolução de problemas,
+                            modelagem de negócios e apresentação de projetos.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ABA CERTIFICADOS -->
+        <div id="aba-certificados" class="aba-conteudo">
+            <div class="caixa-certificados">
+                <div class="certificado-card">
+                    <img
+                        src="./img/Certificado de Conclusão.png"
+                        alt="Certificado de Linguagem de Programação Python - Básico"
+                        class="certificado-imagem"
+                    >
+                    <div class="certificado-texto">
+                        <h3 class="info-projetos">Linguagem de Programação Python – Básico</h3>
+                        <p class="paragrafo-projetos">
+                            Curso autoinstrucional concluído pela Fundação Bradesco – Escola Virtual,
+                            com carga horária de 18 horas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABA STACK TECNOLOGICA -->
+        <div id="aba-stack" class="aba-conteudo">
+            <div class="caixa-stack">
+                <div class="stack-card">
+                    <div class="stack-icone"><i class="fa-brands fa-html5"></i></div>
+                    <div class="stack-nome">HTML5</div>
+                </div>
+                <div class="stack-card">
+                    <div class="stack-icone"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div class="stack-nome">CSS3</div>
+                </div>
+                <div class="stack-card">
+                    <div class="stack-icone"><i class="fa-brands fa-python"></i></div>
+                    <div class="stack-nome">Python (Básico)</div>
+                </div>
+                <div class="stack-card">
+                    <div class="stack-icone"><i class="fa-brands fa-git-alt"></i></div>
+                    <div class="stack-nome">Git &amp; GitHub</div>
+                </div>
+                <div class="stack-card">
+                    <div class="stack-icone"><i class="fa-solid fa-industry"></i></div>
+                    <div class="stack-nome">Automação Industrial</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="contatos">
+
+        <h2 class="contato-titulo">Entre em Contato</h2>
+        <p class="secao-subtitulo">Tem um projeto ou dúvida? Escreva-me e responderei o mais rápido possível.</p>
+
+        <div class="contato-grid">
+
+            <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+                <div class="grupo-form">
+                    <input type="text" placeholder="Nome" class="campo-form" id="nome" required>
+                </div>
+                <div class="grupo-form">
+                    <textarea class="campo-form" placeholder="Digite sua mensagem" rows="4" id="mensagem" required></textarea>
+                </div>
+                <button type="submit" class="botao-form">Enviar Whatsapp</button>
+            </form>
+
+            <div class="fale-comigo">
+                <h3 class="fale-comigo-titulo">Fale comigo</h3>
+
+                <a href="https://www.linkedin.com/in/le%C3%B4nidas-moura-alves-ferreira-b96a613a1/" target="_blank" class="rede-link-principal">
+                    <span class="rede-icone-box"><i class="fa-brands fa-linkedin-in"></i></span>
+                    <span>
+                        <span class="rede-link-nome">Vamos conversar</span>
+                        <span class="rede-link-detalhe">linkedin.com/in/leônidas-...</span>
+                    </span>
+                </a>
+
+                <div class="redes-grid">
+                    <a href="https://instagram.com/leonidasferreira.__" target="_blank" class="rede-link-card">
+                        <span class="rede-icone-box"><i class="fa-brands fa-instagram"></i></span>
+                        <span>
+                            <span class="rede-link-nome">Instagram</span>
+                            <span class="rede-link-detalhe">@leonidasferreira.__</span>
+                        </span>
+                    </a>
+                    <a href="https://github.com/leonidasmaf977-tech" target="_blank" class="rede-link-card">
+                        <span class="rede-icone-box"><i class="fa-brands fa-github"></i></span>
+                        <span>
+                            <span class="rede-link-nome">GitHub</span>
+                            <span class="rede-link-detalhe">@leonidasmaf977</span>
+                        </span>
+                    </a>
+                    <a href="mailto:leonidasmaf047@gmail.com" class="rede-link-card">
+                        <span class="rede-icone-box"><i class="fa-solid fa-envelope"></i></span>
+                        <span>
+                            <span class="rede-link-nome">E-mail</span>
+                            <span class="rede-link-detalhe">leonidasmaf047@gmail...</span>
+                        </span>
+                    </a>
+                    <a href="https://wa.me/5513991522328" target="_blank" class="rede-link-card">
+                        <span class="rede-icone-box"><i class="fa-brands fa-whatsapp"></i></span>
+                        <span>
+                            <span class="rede-link-nome">WhatsApp</span>
+                            <span class="rede-link-detalhe">+55 13 99152-2328</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- COMENTARIOS -->
+    <section id="comentarios" class="comentarios">
+        <h2 class="secao-titulo">Deixe seu Comentário</h2>
+        <p class="secao-subtitulo">Sua opinião e feedback são muito bem-vindos.</p>
+
+        <div class="comentarios-container">
+
+            <form class="form-comentario" id="form-comentario" onsubmit="enviarComentario(event)">
+                <div class="grupo-form">
+                    <input type="text" placeholder="Seu nome" class="campo-form" id="comentario-nome" required>
+                </div>
+                <div class="grupo-form">
+                    <textarea class="campo-form" placeholder="A sua mensagem" rows="3" id="comentario-mensagem" required></textarea>
+                </div>
+                <button type="submit" class="botao-form">
+                    <i class="fa-solid fa-paper-plane"></i> Publicar Comentário
+                </button>
+            </form>
+
+            <div id="lista-comentarios" class="lista-comentarios"></div>
+
+        </div>
+    </section>
+
+    <!-- RODAPE -->
+    <footer class="rodape">
+        © 2026 Leônidas Ferreira. Todos os direitos reservados.
+    </footer>
+
+    <script>
+        // Envio de mensagem pelo formulario de contato via WhatsApp
+        function enviarWhats(event){
+            event.preventDefault()
+            const nome = document.getElementById('nome').value
+            const mensagem = document.getElementById('mensagem').value
+            const telefone = '5513991522328'
+            const texto = `Olá, me chamo ${nome}. ${mensagem}`
+            const msgFormatada = encodeURIComponent(texto)
+            const url = `https://wa.me/${telefone}/?text=${msgFormatada}`
+            window.open(url, '_blank')
+        }
+
+        // Alternancia das abas da Vitrine de Portfolio
+        function mostrarAba(idAba, botaoClicado){
+            document.querySelectorAll('.aba-conteudo').forEach(function(el){
+                el.classList.remove('aba-visivel')
+            })
+            document.querySelectorAll('.aba-botao').forEach(function(el){
+                el.classList.remove('aba-ativa')
+            })
+            document.getElementById(idAba).classList.add('aba-visivel')
+            botaoClicado.classList.add('aba-ativa')
+        }
+
+        // Sistema de comentarios (salvo localmente no navegador de cada visitante)
+        function escaparHTML(texto){
+            const div = document.createElement('div')
+            div.textContent = texto
+            return div.innerHTML
+        }
+
+        function carregarComentarios(){
+            const lista = JSON.parse(localStorage.getItem('comentariosPortfolio') || '[]')
+            const container = document.getElementById('lista-comentarios')
+            container.innerHTML = ''
+
+            if(lista.length === 0){
+                container.innerHTML = '<p class="sem-comentarios">Seja o primeiro a comentar!</p>'
+                return
+            }
+
+            lista.slice().reverse().forEach(function(comentario){
+                const item = document.createElement('div')
+                item.className = 'comentario-item'
+                item.innerHTML = `
+                    <div class="comentario-cabecalho">
+                        <strong>${escaparHTML(comentario.nome)}</strong>
+                        <span>${comentario.data}</span>
+                    </div>
+                    <p>${escaparHTML(comentario.mensagem)}</p>
+                `
+                container.appendChild(item)
+            })
+        }
+
+        function enviarComentario(event){
+            event.preventDefault()
+            const nome = document.getElementById('comentario-nome').value.trim()
+            const mensagem = document.getElementById('comentario-mensagem').value.trim()
+
+            if(!nome || !mensagem) return
+
+            const lista = JSON.parse(localStorage.getItem('comentariosPortfolio') || '[]')
+            const data = new Date().toLocaleDateString('pt-BR')
+
+            lista.push({ nome: nome, mensagem: mensagem, data: data })
+            localStorage.setItem('comentariosPortfolio', JSON.stringify(lista))
+
+            document.getElementById('form-comentario').reset()
+            carregarComentarios()
+        }
+
+        window.addEventListener('DOMContentLoaded', carregarComentarios)
+    </script>
+
+</body>
+</html>
