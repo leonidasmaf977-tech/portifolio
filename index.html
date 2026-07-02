@@ -104,6 +104,9 @@
             <button class="aba-botao" onclick="mostrarAba('aba-stack', this)">
                 <i class="fa-solid fa-layer-group"></i> Stack Tecnológica
             </button>
+            <button class="aba-botao" onclick="mostrarAba('aba-competencias', this)">
+            <i class="fa-solid fa-star"></i> Competências
+            </button>
         </div>
 
         <!-- ABA PROJETOS -->
@@ -205,7 +208,41 @@
             </div>
         </div>
 
+
     </section>
+    <!-- ABA COMPETENCIAS -->
+<div id="aba-competencias" class="aba-conteudo">
+    <div class="caixa-stack">
+        <div class="stack-card">
+            <div class="stack-icone"><i class="fa-solid fa-language"></i></div>
+            <div class="stack-nome">Inglês Fluente</div>
+        </div>
+        <div class="stack-card">
+            <div class="stack-icone"><i class="fa-solid fa-language"></i></div>
+            <div class="stack-nome">Espanhol Intermediário</div>
+        </div>
+        <div class="stack-card">
+            <div class="stack-icone"><i class="fa-solid fa-gears"></i></div>
+            <div class="stack-nome">Controle de Processos</div>
+        </div>
+        <div class="stack-card">
+            <div class="stack-icone"><i class="fa-solid fa-users"></i></div>
+            <div class="stack-nome">Trabalho em Equipe</div>
+        </div>
+        <div class="stack-card">
+            <div class="stack-icone"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="stack-nome">Facilidade de Aprendizagem</div>
+        </div>
+        <div class="stack-card">
+            <div class="stack-icone"><i class="fa-solid fa-code"></i></div>
+            <div class="stack-nome">Lógica de Programação</div>
+        </div>
+        <div class="stack-card">
+            <div class="stack-icone"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="stack-nome">Atenção aos Detalhes</div>
+        </div>
+    </div>
+</div>
 
     <!-- CONTATO -->
     <section id="contato" class="contatos">
@@ -270,30 +307,6 @@
 
         </div>
 
-    </section>
-
-    <!-- COMENTARIOS -->
-    <section id="comentarios" class="comentarios">
-        <h2 class="secao-titulo">Deixe seu Comentário</h2>
-        <p class="secao-subtitulo">Sua opinião e feedback são muito bem-vindos.</p>
-
-        <div class="comentarios-container">
-
-            <form class="form-comentario" id="form-comentario" onsubmit="enviarComentario(event)">
-                <div class="grupo-form">
-                    <input type="text" placeholder="Seu nome" class="campo-form" id="comentario-nome" required>
-                </div>
-                <div class="grupo-form">
-                    <textarea class="campo-form" placeholder="A sua mensagem" rows="3" id="comentario-mensagem" required></textarea>
-                </div>
-                <button type="submit" class="botao-form">
-                    <i class="fa-solid fa-paper-plane"></i> Publicar Comentário
-                </button>
-            </form>
-
-            <div id="lista-comentarios" class="lista-comentarios"></div>
-
-        </div>
     </section>
 
     <!-- RODAPE -->
